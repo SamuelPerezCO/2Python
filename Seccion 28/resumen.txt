@@ -1,0 +1,2 @@
+se modifico lo de la seccion 27 , agregando las formas de debug , log y el como hacer el pool de conexiones que es para no tener una conexion si
+que poder abrir varias conexiones a la ves y esto mejora el codigo , codigo limpio yo creeria
