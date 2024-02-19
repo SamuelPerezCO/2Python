@@ -36,3 +36,39 @@ print('Termina con:', contenido.lower().endswith('globalmentoring.com.mx'.lower(
 mensaje = 'Hola Mundo'
 print(mensaje.lower().islower())
 print(mensaje.upper().isupper())
+
+#Alinear Cadenas 
+
+#Center - Centrar un str
+titulo = 'Sitio Web de GlobalMentoring.com.mx'
+#print(titulo.center(50 , '*'))
+#print(len(titulo.center(50 , '*')))
+#print(titulo.center(len(titulo)+10, '-'))
+
+#print(titulo.ljust(50 ,'*'))
+print(titulo.ljust(len(titulo) + 10, '-'))
+
+print(titulo.rjust(50,'-'))
+
+#Reemplazar contenido en un string
+print(contenido.replace(' ', '-'))
+
+
+#Eliminar caracteres al inicio y final de un str - strip
+titulo = ' *** GlobalMentoring.com.mx *** '
+print('Cadena Original: ' , titulo ,len(titulo))
+titulo = titulo.strip()
+print('Cadena Modificada:',titulo , len(titulo))
+
+titulo = '***GlobalMentoring.com.mx***'.strip('*')
+print('Cadena Modificada: ' , titulo)
+
+titulo = '***GlobalMentoring.com.mx***'.lstrip('*')
+print('Cadena Modificada' , titulo)
+
+
+titulo = '***GlobalMentoring.com.mx***'.rstrip('*')
+print('Cadena Modificada' , titulo)
+
+titulo = ' *** GlobalMentoring.com.mx *** '.strip().strip('*').strip()
+print('Cadena Modificada: ' , titulo)
